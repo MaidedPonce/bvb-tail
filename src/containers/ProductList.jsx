@@ -1,19 +1,17 @@
 import React from "react";
 import ProductItem from "../components/ProductItem";
 import "../styles/ProductList.scss";
-import useGetProducts from "../hooks/useGetProducts";
-
-const API = "http://api.escuelajs.co/api/v1/products";
+import data from "../hooks/useGetProducts";
 
 const ProductList = () => {
-  const products = useGetProducts(API);
+  const products = data;
 
   return (
     <section className="main-container">
       <div className="ProductList">
-        {products.map(() => {
-          <ProductItem product={product} key={product.id} />;
-        })}
+        {products.map((item) => (
+          <ProductItem product={item} key={products.id} />
+        ))}
       </div>
     </section>
   );

@@ -1,7 +1,6 @@
 import React, {useContext} from "react";
 import AppContext from "../context/AppContext";
 import "../styles/OrderItem.scss";
-import { useContext } from "react";
 
 const OrderItem = ({ product }) => {
   const { removeFromCart } = useContext(AppContext)

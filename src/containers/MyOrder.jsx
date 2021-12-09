@@ -27,7 +27,7 @@ const MyOrder = () => {
           <p>
             <span>Total</span>
           </p>
-          <p>${sumTotal}</p>
+          <p>${sumTotal()}</p>
         </div>
         <button className="primary-button">Checkout</button>
       </div>
@@ -36,5 +36,3 @@ const MyOrder = () => {
 };
 
 export default MyOrder;
-
-ProductDetail.jsx;

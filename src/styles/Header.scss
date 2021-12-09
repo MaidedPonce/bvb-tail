@@ -1,5 +1,7 @@
 @import 'vars';
 
+/* #A9A520 */
+
 nav {
 	display: flex;
 	justify-content: space-between;
@@ -10,7 +12,9 @@ nav {
 	display: none;
 }
 .nav-logo {
-	width: 100px;
+	height: 40px;
+	margin: auto;
+	width: 40px;
 }
 .navbar-left ul,
 .navbar-right ul {

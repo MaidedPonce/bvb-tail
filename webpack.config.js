@@ -18,7 +18,8 @@ module.exports = {
       "@pages": path.resolve(__dirname, "src/pages"),
       "@styles": path.resolve(__dirname, "src/styles"),
       "@icons": path.resolve(__dirname, "src/assets/icons"),
-      "@logos": path.resolve(__dirname, "src/assets/logos")
+      "@logos": path.resolve(__dirname, "src/assets/logos"),
+      "@imag": path.resolve(__dirname, "src/assets/images")
     }
   },
   module: {
@@ -43,7 +44,7 @@ module.exports = {
         use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.(png|svg|jpg|jpeg|gif)$/,
         type: "asset"
       }
     ],

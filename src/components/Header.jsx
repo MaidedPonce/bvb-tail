@@ -3,7 +3,7 @@ import "@styles/Header.scss";
 import Menu from "@components/Menu";
 import MyOrder from "../containers/MyOrder";
 import menu from "@icons/icon_menu.svg";
-import logo from "@logos/logo_yard_sale.svg";
+import logo from "@logos/rocks.png";
 import AppContext from "../context/AppContext";
 import shoppingCart from "@icons/icon_shopping_cart.svg";
 
@@ -29,13 +29,13 @@ const Header = () => {
             <a href="/">Clothes</a>
           </li>
           <li>
-            <a href="/">Electronics</a>
+            <a href="/">CDs</a>
           </li>
           <li>
-            <a href="/">Furnitures</a>
+            <a href="/">Posters</a>
           </li>
           <li>
-            <a href="/">Toys</a>
+            <a href="/">Accesories</a>
           </li>
           <li>
             <a href="/">Others</a>
@@ -45,14 +45,14 @@ const Header = () => {
       <div className="navbar-right">
         <ul>
           <li className="navbar-email" onClick={handleToggle}>
-            platzi@example.com
+            someone@example.com
           </li>
           <li
             className="navbar-shopping-cart"
             onClick={() => setToogleOrders(!toggleOrders)}
           >
             <img src={shoppingCart} alt="shopping cart" />
-            {state.cart.length > 0 ? <div>${state.cart.length}</div> : "0"}
+            {state.length > 0 ? <div>${state.length}</div> : "0"}
           </li>
         </ul>
       </div>
